@@ -1,0 +1,49 @@
+<!DOCTYPE html  >
+<html ng-app="capitalsApp">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Countries and Capitals</title>
+  <link type= "text/css" rel="stylesheet" href="css/main.css">
+
+  </head>
+
+  <div class= "header"><h1> Countries and Capitals </h1>
+    <div class="navbar">
+       <nav>
+       <ul>
+         <li>
+           <a href="#!/">Home</a>
+         </li>
+         <li>
+           <a href="!/countries">Countries </a>
+         <li>
+       </ul>
+       </nav>
+     </div>
+  </div>
+  <body>
+
+  <div class="mainWrapper" ng-controller="capitalsCtrl">
+   <form ng-submit=search()>
+  This app is designed to show you some detailed information on world captials. </br>
+
+  <button  type="submit"  value="getCountries">Browse Countries </button>
+    </form>
+
+  <div ng-repeat= "item in countryArray">
+    <table>
+      <tr> </tr>
+      <tr>
+    <td>  {{country}} </td> <td> {{code}} </td> <td> {{capital}} </td> <td> {{area}}</td> <td> {{population}}<td>
+    </tr>
+  </table>
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/main.js"><script>
+  </body>
+</html>

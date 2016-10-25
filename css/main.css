@@ -1,0 +1,63 @@
+body{
+
+font-family:  arial;
+}
+
+header {
+  height: 90px;
+  width: 100%;
+  border-bottom: 3px solid black;
+  position: fixed;
+  text-align: center;
+}
+
+h1{
+  text-align: center;
+}
+
+.navbar{
+}
+
+ul{
+
+  list-style-type: none;
+}
+
+
+li{
+
+  display: inline;
+  padding: 8px;
+  background-color: gold;
+  text-align: center;
+}
+
+ li a{
+   text-decoration: none;
+   display: inline;
+ }
+
+.mainWrapper{
+
+  margin-top: 150px;
+  height: 100px;
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  border: 3px solid black;
+}
+
+table {
+
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+td {
+
+ padding-right: 50px;
+ text-align: left;
+ border: 1px solid black;
+
+}
